@@ -1,11 +1,22 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+
+## Holocene Assessment
+
+This challenge can be done by 2 approaches:
+
+* Front-end knows about the row state and sent states to the backend, In backend side by using row state we can realize which operation should be done (Create/Update/Delete)
+
+* Front-end doesn't know about the row state or operation, in this case we can handle it by ORM on the backend side. I followed the challenge with this approach. I used <code>upsert</code> for doing (create/update/delete) in a single operation.
+
+## Some Information
+
+* <code>src/loans</code> includes the assessment challenge
+* <code>src/tests</code> Because I didn't experienced <code>Prisma</code> before, I did try to create CRUD endpoints to be more familiar with this ORM
+
 
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
-  <p align="center">Nestjs is a progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
+## Tutorial for creating nestjs endpoints using prisma ORM and Postgres
 
   <p>
   In this tutorial, you will learn how to build the backend REST API for a application. You will get started by creating a new NestJS project. Then you will start your own PostgreSQL server and connect to it using Prisma. Finally, you will build the REST API and document it with Swagger.
